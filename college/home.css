@@ -1,0 +1,566 @@
+@import url('https://fonts.googleapis.com/css?family=poppins:200,300,400,500,600,700,800,900&display=swap');
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'poppins',sans-serif;
+}
+.banner{
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	background: black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+.banner img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	opacity: 0.25;
+}
+.banner .cont {
+	position: relative;
+	max-width: 750px;
+	text-align: center;
+}
+.banner .cont h2{
+	color: #fff;
+	font-size: 60px;
+
+}
+.banner .cont p{
+	color: #fff;
+	font-size: 18px;
+}
+.banner header{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 40px 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 10000;
+}
+.banner header .logo{
+	color: #fff;
+	text-decoration: none;
+	font-size: 24px;
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: 1px;
+}
+.about{
+	position: relative;
+	width: 100%;
+	display: flex;
+
+}
+.about .contentbx{
+	background: #162c3b;
+	padding: 100px;
+	width: 50%;
+}
+.heading{
+	color: #fff;
+	font-size: 30px;
+	font-weight: 600;
+	letter-spacing: 1px;
+	margin-bottom: 10px;
+
+}
+.text{
+	color: #fff;
+	font-size: 16px;
+	font-weight: 300;
+	letter-spacing: 1px;
+
+}
+.about .imgbx{
+	background: url(about.jpg);
+	width: 50%;
+	background-size: cover;
+	background-position: center;
+	opacity: 0.25 color :black;
+}
+.services{
+	background: #12222d;
+	padding: 100px;
+	text-align: center;
+
+}
+.services .container{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	margin-top: 60px;
+}
+.services .container .servicesbx{
+	position: relative;background: #fff;
+	width: 350px;
+	height: 400px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.services .container .servicesbx img{
+	max-width: 100px;
+}
+.services .container .servicesbx h2{
+	font-weight: 500;
+	font-size: 20px;
+	letter-spacing: 1px;
+
+}
+.tech{
+	background: #3f8ffc;
+	width: 100%;
+	padding: 100px;
+	padding-top: 300px;
+	margin-top: -300px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.tech .contentbx{
+	max-width: 800px;
+}
+.tech .imgbx{
+	max-width: 250px;
+}
+.tech .imgbx img{
+	max-width: 100%
+}
+.client{
+	background: #162c3b;
+	padding: 100px;
+	text-align: center;
+}
+.client .imgbx{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	margin-top: 40px;
+}
+.client .imgbx img{
+	max-width: 200px;
+	width:150px;
+	margin: 20px;
+	opacity: 0.25;
+	cursor: pointer;
+}
+.client .imgbx img:hover{
+	opacity: 1;
+}
+.test{
+	position: relative;
+	padding:100px;
+	background: #12222d;
+	text-align: center;
+
+}
+.test .container{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 40px;
+	flex-wrap: wrap;
+}
+.test .container .contentbx{
+
+	background: #fff;
+	padding: 60px 50px;
+	width: 550px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: left;
+}
+.test .container .contentbx p{
+	font-style: italic;
+	font-weight: 700;
+
+}
+.test .container .contentbx h3{
+	width: 100%;
+	text-align: end;
+	font-weight: 500;
+	color: #3f8ffc;
+
+}
+.contact{
+	padding: 100px;
+	background: #162c3b;
+	text-align: center;
+}
+.imgbx2{
+	background: url(hall.jpg);
+	background-size: cover;
+	background-position: center;
+	width: 50%;
+}
+.redbg{
+	background: url(gate.jpg) !important;
+	background-size: cover;
+	background-position: center;
+}
+.form .inputbx{
+	margin-top: 40px;
+
+}
+.form .inputbx input{
+	width: 100%;
+	background: transparent;
+	box-shadow: none;
+    border:none;
+    outline: none;
+    padding: 10px 0;
+    font-size: 18px;
+    font-weight: 300;
+    color: #fff;
+    border-bottom: 2px solid #fff;
+
+
+}
+.form .inputbx input::palceholder{
+	color: #fff;
+}
+
+.form .inputbx textarea{
+	width: 100%;
+	background: transparent;
+	box-shadow: none;
+    border:none;
+    outline: none;
+    padding: 10px 0;
+    font-size: 18px;
+    font-weight: 300;
+    color: #fff;
+    min-height: 150px;
+    border-bottom: 2px solid #fff;
+
+
+}
+.form .inputbx textarea::palceholder{
+	color: #fff;
+}
+.form .inputbx input[type="submit"]{
+	width: 150px;
+	background: #fff;
+	color: #111;
+	cursor: pointer;
+	font-weight: 400;
+}
+.footer{
+	background: #162c3b;
+	padding: 20px 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.footer ul{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+.footer ul li{
+	line-height: none;
+
+}
+.footer ul li a{
+	text-decoration:  none;
+	display: inline-block;
+	margin: 0 10px;
+}
+.footer ul li img{
+filter: invert(1);
+max-width: 20px;
+}
+
+
+
+
+
+.container1{
+	position: relative;
+	max-width: 100%;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+	grid-template-rows: minmax(100px,auto);
+	margin: 40px;
+	margin-bottom: 0px;
+	grid-auto-flow: dense;
+	grid-gap: 10px;
+}
+.container1 .box1{
+	background:#333;
+	padding: 20px;
+	display: grid;
+	font-size: 20px; 
+	place-items:center;
+	text-align: center;
+	color: #fff;
+	transition: 0.5s;
+}
+.container1 .box1:hover{
+	background: #e91e63;
+}
+.container1 .box1 img{
+	position: relative;
+	max-width: 100px;
+	margin-bottom: 10px;
+}
+.container1 .box1:nth-child(1){
+	grid-column: span 2;
+	grid-row: span 1;
+
+}
+.container1 .box1:nth-child(2){
+	grid-column: span 1;
+	grid-row: span 2;
+
+}
+.container1 .box1:nth-child(4){
+	grid-column: span 1;
+	grid-row: span 2;
+
+}
+.container1 .box1:nth-child(6){
+	grid-column: span 3;
+	grid-row: span 1;
+
+}
+.dept{
+	background: #12222d;
+}
+.heading1{
+	text-align: center;
+	color: #fff;
+	padding-top: 20px;
+	letter-spacing: 1px;
+}
+
+
+
+
+
+
+
+.contact-info{
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+}
+
+
+.card{
+  background: #2f3542;
+  padding: 0 20px;
+  margin: 0 10px;
+  width: calc(33% - 20px);
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  cursor: pointer;
+}
+
+.card-icon{
+  font-size: 28px;
+  background: #ff6348;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px !important;
+  border-radius: 50%;
+  transition: 0.3s linear;
+}
+
+.card:hover .card-icon{
+  background: none;
+  color: #ff6348;
+  transform: scale(1.6);
+}
+
+.card p{
+  margin-top: 20px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  max-height: 0;
+  opacity: 0;
+  transition: 0.3s linear;
+}
+
+.card:hover p{
+  max-height: 40px;
+  opacity: 1;
+}
+
+
+@media screen and (max-width:800px) {
+  .contact-info{
+    flex-direction: column;
+  }
+  .card{
+    width: 100%;
+    max-width: 300px;
+    margin: 10px 0;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 991px)
+{
+	.container1{
+
+	grid-template-columns: repeat(auto-fill, minmax(50%,1fr));
+	grid-template-rows: minmax(auto,auto);
+   }
+   .container1 .box1{
+   	grid-column: unset !important;
+   	grid-row: unset !important;
+   }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 991px){
+	.banner {
+		padding: 50px;
+	}
+	.banner header{
+		padding: 20px 50px;
+	}
+	.banner header.logo{
+		font-size: 500px;
+	}
+	.banner .cont h2{
+		font-size: 70px;
+
+
+	}
+	.banner .cont p{
+		font-size: 40px;
+	}
+	.about{
+		flex-direction: column;
+	}
+	.about .contentbx,
+	.about .imgbx{
+		width: 100%;
+		padding: 50px;
+		min-height: 400px;
+		text-align: center;
+	}
+    .services {
+     padding: 50px;
+    }
+    .services .container {
+    	justify-content: center;
+    	margin-top: 20px;
+
+    }
+   .services .container .servicesbx{
+    	margin: 20px;
+    	width: 300px;
+    	height: 350px;
+    }
+   .tech{
+   	padding: 50px;
+   	padding-top: 300px;
+   	justify-content: center;
+   	flex-direction: column;
+   }
+   .tech .imgbx{
+   	margin-top: 40px;
+   	max-width: 250px;
+   }
+   .client{
+   	padding: 50px;
+   }
+   .client .imgbx{
+   	justify-content: center;
+   }
+   .test{
+   	padding: 200px;
+   }
+   .test .contentbx{
+   	padding: 60px 40px;
+   	max-width: 550px;
+   	margin-bottom: 40px
+   }
+   .test .contentbx:last-child{
+   	margin-bottom: 0px;
+   }
+   .contact{
+   	padding: 50px;
+
+   }
+   .form .inputbx input{
+	width: 100%;
+    font-size: 30px;
+
+}
+   .footer{
+   	padding: 20px 50px;
+   	flex-direction: column-reverse;
+   	text-align: center;
+
+   }
+   .footer ul{
+   	margin-bottom: 20px;
+   }
+}

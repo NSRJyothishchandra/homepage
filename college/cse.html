@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+	<title>Cse</title>
+	<link rel="stylesheet" type="text/css" href="cse.css">
+</head>
+<body>
+<section class="banner" id="sec">
+	<header>
+		<a href="#" class="logo"> cse</a>
+		<div id="toggle" onclick="toggle()"></div>
+	</header>
+	<div class="content">
+		<h2>hello <br>welcome to the<span>computer</span></h2>
+		<p>Computer Science & Engineering (CSE) is an academic program at some universities that integrates the fields of computer engineering and computer science, providing knowledge of computing systems in both hardware and software design. The study program is modeled on German technical universities, where CS, CE and IT are treated as respectively the theoretical, technical and practical part of one field called "Informatik".</p>
+		<a href="#">know More</a>
+	</div>
+	<ul class="sci">
+		<li><a href="#"><img src="facebook.png"></a></li>
+		<li><a href="#"><img src="twitter.png"></a></li>
+		<li><a href="#"><img src="linkedin.png"></a></li>
+	</ul>
+</section>
+<div id="navigation">
+	<ul>
+		<li><a href="#">home</a></li>
+		<li><a href="#">about</a></li>
+		<li><a href="#">work</a></li>
+		<li><a href="#">services</a></li>
+		<li><a href="#">contact</a></li>
+	</ul>
+</div>
+<script type="text/javascript">
+	function toggle() {
+		var sec = document.getElementById('sec');
+		var nav = document.getElementById('navigation')
+		sec.classList.toggle('active');
+		nav.classList.toggle('active');
+	}
+</script>
+</body>
+</html>
